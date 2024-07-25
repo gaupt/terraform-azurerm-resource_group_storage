@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "tk6" {
   location = var.location
 }
 
-resource "azurerm_storage_account" "task6" {
+resource "azurerm_storage_account" "tk6" {
   name                     = var.storage_account_name
   resource_group_name      = azurerm_resource_group.tk6.name
   location                 = azurerm_resource_group.tk6.location
